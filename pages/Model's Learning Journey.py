@@ -31,7 +31,7 @@ def plot_classes():
 st.markdown(
     """
 The data included:
-- 10222 images
+- 10,222 images
 - 120 unique breeds
 """
 )
@@ -42,11 +42,34 @@ if st.checkbox("Show raw data"):
     df_labels
 
 
-if st.checkbox("Show number of samples per breed"):
+if st.checkbox("Show number of images per breed"):
     plot_classes()
 
 
 "## Training"
 
-"## Validation"
-"## Kaggle Scores"
+"I trained MobileNetV2 on 1000 images first and got an accuracy of 64% on the validation set."
+
+st.markdown(
+"""
+Take a look at some of the predictions the model made
+* Correct breed is at the top of picture, prediction is at the bottom, red denotes it got it wrong.
+* Each image is accompanied by graph of top 10 predicted breeds and confidence score.
+"""
+)
+
+from PIL import Image
+
+image = Image.open("assets/p1.png")
+
+st.image(image, caption="MobileNetV2 predictions")
+
+"Later on, I tranined a new instance of MobileNetV2 on the full dataset (10,222 images)."
+
+"I submitted predictions made on a test dataset to Kaggle and got a [Multi Class Log Loss](https://www.kaggle.com/wiki/MultiClassLogLoss) score of 20.07."
+
+"# Improvements"
+
+"The first model was overfitting. Therefore I switched to EfficientNet-BO in the hope that I could get better results."
+
+"Repeating the same steps as before, I submitted another set of predictions, this time from EfficientNet-BO and got a much better Log Loss score: 0.86 🥳🥳"

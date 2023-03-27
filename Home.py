@@ -57,4 +57,19 @@ if uploaded_file is not None:
     step_2.text(f"Analyzing '{uploaded_file.name}'... ✅\n")
 
     # Display the converted image and label
-    st.image(img_array, caption=label)
+    # left_col, right_col = st.columns(2)
+    # top_10_idx = prediction.argsort()[::-1][:10]
+    # print(top_10_idx)
+    # top_10_preds = prediction[top_10_idx]
+    # top_10_labels = unique_breeds[top_10_idx]
+
+    # with left_col:
+    #     st.image(img_array, caption=label)
+
+    # with right_col:
+    #     top_10_labels
+
+    st.image(img_array)
+    confidence = np.max(prediction) * 100
+    icon = "😀" if confidence > 60 else "🤔"
+    f"I am **{confidence:.0f}%** confident that the dog's breed is **{label.capitalize()}** {icon}"

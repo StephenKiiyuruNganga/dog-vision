@@ -2,7 +2,7 @@
 
 In this epic journey, we:
 1. Builds an end to end multiclass image classifier using Tensorflow 2.0 and Tensorflow Hub
-2. Deploy the model inside a streamlit app so that the world can enjoy it. Checkout the app [here]()
+2. Deploy the model inside a streamlit app so that the world can enjoy it. Checkout the app [here]().
 
 ## 1. Problem
 
@@ -10,11 +10,11 @@ Identifying the breed of a dog given an image of a dog
 
 ## 2. Data
 
-The data is from Kaggle: https://www.kaggle.com/c/dog-breed-identification
+The data is from this [Kaggle competion](https://www.kaggle.com/c/dog-breed-identification).
 
 ## 3. Evaluation
 
-Kaggle requires a csv listing the prediction probabilities for each dog breed of each test image. Read more on this [here](https://www.kaggle.com/competitions/dog-breed-identification/overview/evaluation)
+Kaggle requires a csv listing the prediction probabilities for each dog breed of each test image. Read more on this [here](https://www.kaggle.com/competitions/dog-breed-identification/overview/evaluation).
 
 ## 4. Features
 

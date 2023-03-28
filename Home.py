@@ -5,6 +5,13 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
+# page configurations
+st.set_page_config(
+    page_title="Dog Vision",
+    page_icon="🐶",
+    initial_sidebar_state="expanded",
+)
+
 
 @st.cache_resource
 def load_model():

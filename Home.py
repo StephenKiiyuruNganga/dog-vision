@@ -29,6 +29,8 @@ def get_labels():
 
 "# Dog Vision 🐶"
 
+"This app uses a machine learning model to detect the breed of a dog in a given image. Go ahead and try it out! 😀"
+
 model = load_model()
 df_labels = get_labels()
 labels = np.array(df_labels["breed"])

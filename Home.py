@@ -83,7 +83,7 @@ if uploaded_file is not None:
     icon = "😀" if confidence > 60 else "🤔"
     f"I am **{confidence:.0f}%** confident that the dog's breed is **{label.capitalize()}** {icon}"
 
-"# Future Updates"
+"## Future Updates"
 
 st.markdown(
     """

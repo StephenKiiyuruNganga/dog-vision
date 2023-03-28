@@ -1,5 +1,12 @@
 import streamlit as st
 
+# page configurations
+st.set_page_config(
+    page_title="Dog Vision",
+    page_icon="🐶",
+    initial_sidebar_state="expanded",
+)
+
 "# Hi 👋, I'm Steve!"
 
 st.markdown(

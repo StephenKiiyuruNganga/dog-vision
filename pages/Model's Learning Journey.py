@@ -3,6 +3,14 @@ import pandas as pd
 import altair as alt
 
 
+# page configurations
+st.set_page_config(
+    page_title="Dog Vision",
+    page_icon="🐶",
+    initial_sidebar_state="expanded",
+)
+
+
 @st.cache_data
 def get_labels():
     return pd.read_csv("train/labels.csv")

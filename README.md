@@ -1,7 +1,7 @@
 # 🐶End to end multiclass dog breed classification
 
 In this epic journey, we:
-1. Builds an end to end multiclass image classifier using Tensorflow 2.0 and Tensorflow Hub
+1. Build an end to end multiclass image classifier using Tensorflow 2.0 and Tensorflow Hub
 2. Deploy the model inside a streamlit app so that the world can enjoy it. Checkout the app [here]().
 
 ## 1. Problem

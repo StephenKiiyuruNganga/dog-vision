@@ -1,6 +1,8 @@
 # 🐶End to end multiclass dog breed classification
 
-This notebook builds an end to end multiclass image classifier using Tensorflow 2.0 and Tensorflow Hub
+In this epic journey, we:
+1. Builds an end to end multiclass image classifier using Tensorflow 2.0 and Tensorflow Hub
+2. Deploy the model inside a streamlit app so that the world can enjoy it. Checkout the app [here]()
 
 ## 1. Problem
 
@@ -12,9 +14,7 @@ The data is from Kaggle: https://www.kaggle.com/c/dog-breed-identification
 
 ## 3. Evaluation
 
-A file listing the prediction probabilities for each dog breed of each test image
-
-https://www.kaggle.com/competitions/dog-breed-identification/overview/evaluation
+Kaggle requires a csv listing the prediction probabilities for each dog breed of each test image. Read more on this [here](https://www.kaggle.com/competitions/dog-breed-identification/overview/evaluation)
 
 ## 4. Features
 
